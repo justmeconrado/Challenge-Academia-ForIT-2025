@@ -1,0 +1,44 @@
+.task-list-page {
+  padding: 10px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  color: #333;
+  font-size: 28px;
+}
+
+.add-button {
+  background-color: #2196f3;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.add-button:hover {
+  background-color: #0b7dda;
+}
+
+.loading,
+.empty-list {
+  text-align: center;
+  padding: 30px;
+  color: #666;
+  font-size: 18px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-list {
+  margin-top: 20px;
+}
