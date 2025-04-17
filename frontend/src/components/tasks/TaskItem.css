@@ -1,0 +1,85 @@
+.task-item {
+  background: white;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: all 0.2s ease;
+}
+
+.task-item.completed {
+  opacity: 0.7;
+  background-color: #f8f8f8;
+}
+
+.task-item.completed h3 {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-content {
+  flex: 1;
+}
+
+.task-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.task-header input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.task-item p {
+  color: #666;
+  font-size: 14px;
+  margin-left: 25px;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.task-actions button:first-child {
+  background-color: #4caf50;
+}
+
+.task-actions button:first-child:hover {
+  background-color: #3d8b40;
+}
+
+.task-actions button:last-child {
+  background-color: #f44336;
+}
+
+.task-actions button:last-child:hover {
+  background-color: #d32f2f;
+}
+
+.task-edit-form {
+  width: 100%;
+}
+
+.task-edit-form input,
+.task-edit-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.task-edit-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
